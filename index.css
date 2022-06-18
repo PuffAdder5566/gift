@@ -1,0 +1,96 @@
+
+body{
+  background-image: url('background1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+p{
+  position: absolute;
+  left: 320px;
+  top: 340px;
+}
+h1{
+  position: absolute;
+  left: 180px;
+  top: 70px;
+}
+.popup {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup img{
+  position: absolute;
+  width: 200px;
+  margin-left: 250px;
+  margin-bottom: 300px;
+  bottom: 0px;
+}
+/* The actual popup */
+.popup .popuptext {
+  position: absolute;
+  visibility: hidden;
+  width: 700px;
+  height: 620px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 15px;
+  padding: 8px ;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+}
+.popup .popuptext p{
+  position: absolute;
+text-align: center;
+left: 50px;
+bottom: 0px;
+top: 500px;
+
+}
+.popup .popuptext h1{
+text-align: center;
+margin-left: 55px;
+}
+.popup .popuptext img{
+  position: absolute;
+  width: 400px;
+  top: 150px;
+  right: 200px;
+
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

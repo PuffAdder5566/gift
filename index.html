@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Claim your gift now!!!</h1>
+    <div class="popup" onclick="myFunction()"><img src="gift.png">
+      <span class="popuptext" id="myPopup"><h1>Coffee Time!</h1><img src="coffee.png" alt=""> <p>Coffee time has been proven to have tones of benefits but even more so when you do it with me! <br>($10 worth of coffee time with Tyler)</p></span>
+    </div>
+    <p>(click here)</p>
+  </body>
+  <script>
+    // When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+  </script>
+</html>
